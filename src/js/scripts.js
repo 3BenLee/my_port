@@ -1,4 +1,4 @@
-// Fade in navbar background on scroll
+/*// Fade in navbar background on scroll
 $(window).on('scroll', function() {
 	if($(window).scrollTop()) {
 		$('nav').addClass('scrolling');
@@ -6,6 +6,28 @@ $(window).on('scroll', function() {
 		$('nav').removeClass('scrolling');
 	}	
 });
+*/
+
+//navbar on scroll up
+scrollDetector.on( 'scroll:up', function() {
+
+  $('nav').removeClass('hiding');
+  $('nav').addClass('showing');
+
+} );
+scrollDetector.on( 'scroll:down', function() {
+
+  $('nav').removeClass('showing');
+  $('nav').addClass('hiding');
+
+} );
+
+scrollDetector.on( 'at:top', function() {
+    
+    $('nav').removeClass('showing');
+    $('nav').addClass('hiding');
+} );
+
 
 
 // Fade "Front End Dev" out on scroll
