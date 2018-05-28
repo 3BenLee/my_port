@@ -1,0 +1,46 @@
+@import 'variables';
+@import 'nav-button';
+@import 'page-one';
+@import 'page-two';
+@import 'page-three';
+@import 'page-four';
+
+
+body, html {
+    height: 100%;
+    margin: 0px;
+    font-family: $main-font;
+    color: $cream;
+}
+
+
+
+/*
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(130%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+*/
+
+
+
+ 
+
+
+
+
+
+
