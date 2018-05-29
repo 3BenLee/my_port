@@ -8,26 +8,41 @@ $(window).on('scroll', function() {
 });
 */
 
+var $navbar = $('.navbar');
+//var $bgPageTwo = $('.bgPageTwo');
+
 //navbar on scroll up
 scrollDetector.on( 'scroll:up', function() {
 
-  $('nav').removeClass('hiding');
-  $('nav').addClass('showing');
+  $navbar.removeClass('hiding');
+  $navbar.addClass('showing');
 
 } );
+
 scrollDetector.on( 'scroll:down', function() {
 
-  $('nav').removeClass('showing');
-  $('nav').addClass('hiding');
+  $navbar.removeClass('showing');
+  $navbar.addClass('hiding');
 
 } );
 
 scrollDetector.on( 'at:top', function() {
     
-    $('nav').removeClass('showing');
-    $('nav').addClass('hiding');
+    $navbar.removeClass('showing');
+    $navbar.addClass('hiding');
 } );
 
+// $bgPageTwo.waypoint(function(direction) {
+
+//   console.log(direction)
+
+//   if (direction == 'up') {
+
+//     $navbar.removeClass('showing');
+//     $navbar.addClass('hiding');
+//   }
+     
+// }, {offset: '10%'});
 
 
 // Fade "Front End Dev" out on scroll
@@ -36,9 +51,7 @@ $(window).scroll(function() {
     if ($(window).scrollTop()>0)
      {
         $('.nav-2').fadeOut();
-     }
-    else
-     {
+     } else {
       $('.nav-2').fadeIn();
      }
  });
