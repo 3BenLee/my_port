@@ -1,0 +1,28 @@
+.about {
+	background-color: rgba(78, 65, 59, .1);
+	width: 100%;
+	margin-top: 0px;
+	overflow: hidden;
+}
+
+.about-photo {
+	float: left;
+	width: 50%;
+	margin-right: 40px;
+}
+
+.about-header {
+	font-family: 'Amatic SC', cursive;
+	font-size: 5rem;
+	color: $orange;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.about p {
+	font-size: 1.5rem;
+	line-height: 2;
+	color: $greyopacity;
+	margin-left: 40px;
+	margin-right: 30px;
+}

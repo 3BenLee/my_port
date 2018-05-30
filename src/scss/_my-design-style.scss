@@ -1,18 +1,18 @@
 .my-design-style {
   background-color: $cream;
   width: 100%;
-  height: 100vh;
-
+  overflow: hidden;
+  
   h2 {
 	color: rgba(57, 74, 81, 0.8);
 	text-align: center;
 	max-width: 900px;
 	margin-right: auto;
 	margin-left: auto;
-	padding-top: 70px;
-	font-size: 2rem;
+	padding-top: 20px;
+	font-size: 2.5rem;
 	font-weight: 300;
-	line-height: 2;
+	line-height: 1.5;
 	}
 }
 
@@ -21,16 +21,16 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  margin: 0 20px 0 30px;
-  max-width: 900px;
+  max-width: 800px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 60px;
+  margin-top: 40px;
 }
 
 .tool-items {
-	color: $greyopacity;
-	font-size: 6rem;
+	color: $orange;
+	font-size: 8rem;
+	margin: 0 40px 10px 40px;
 }
 
 
