@@ -409,10 +409,23 @@ nav ul li a:hover {
     max-width: 900px;
     margin-right: auto;
     margin-left: auto;
-    padding-top: 20px;
+    padding-top: px;
     font-size: 2.5rem;
     font-weight: 300;
     line-height: 1.5; }
+
+hr.top {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+  width: 80%;
+  margin-top: 40px; }
+
+hr.bottom {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+  width: 80%; }
 
 .tool-flex-icons {
   opacity: 1;
@@ -422,7 +435,8 @@ nav ul li a:hover {
   max-width: 800px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 40px; }
+  margin-top: 40px;
+  margin-bottom: 40px; }
 
 .tool-items {
   color: #F2855E;
@@ -442,7 +456,7 @@ nav ul li a:hover {
 
 .about-header {
   font-family: 'Amatic SC', cursive;
-  font-size: 5rem;
+  font-size: 5.5rem;
   color: #F2855E;
   margin-top: 0;
   margin-bottom: 0; }
@@ -452,7 +466,8 @@ nav ul li a:hover {
   line-height: 2;
   color: rgba(57, 74, 81, 0.8);
   margin-left: 40px;
-  margin-right: 30px; }
+  margin-right: 30px;
+  margin-top: 0; }
 
 .bg-page-4 {
   background-image: url("../images/waving-cat.jpg");
@@ -462,16 +477,22 @@ nav ul li a:hover {
   /* Center and scale the image nicely */
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  opacity: .5; }
 
 * {
   box-sizing: border-box; }
 
 .portfolio {
-  background-color: #7FA99B;
+  /*background-color: rgba(127, 169, 155, .6);
   max-width: 100%;
   margin-left: auto;
-  margin-right: auto;
+  margin-right: auto;*/
+  width: 100%;
+  background-image: url("../images/workspace.jpg");
+  opacity: .6;
+  background-repeat: no-repeat;
+  background-size: cover;
   overflow: hidden; }
 
 .port-flex-row {
@@ -496,8 +517,8 @@ nav ul li a:hover {
   padding: 10px;
   margin: 70px;
   width: 30%;
-  background-color: #FBF2D5;
-  border: 1px #7FA99B;
+  background-color: rgba(57, 74, 81, 0.5);
+  border-radius: 8px;
   text-align: center; }
 
 img {
