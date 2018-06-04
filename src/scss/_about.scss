@@ -13,16 +13,17 @@
 
 .about-header {
 	font-family: 'Amatic SC', cursive;
-	font-size: 5.5rem;
+	font-size: 6rem;
 	color: $orange;
+	text-shadow: 3px 3px $navyblue;
 	margin-top: 0;
 	margin-bottom: 0;
 }
 
 .about p {
 	font-size: 1.5rem;
-	line-height: 2;
-	color: $greyopacity;
+	line-height: 1.5;
+	color: $navyblue;
 	margin-left: 40px;
 	margin-right: 30px;
 	margin-top: 0;

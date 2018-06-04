@@ -1,17 +1,13 @@
 
-* {
+/** {
     box-sizing: border-box;
-}
+}*/
 
 .portfolio {
-  /*background-color: rgba(127, 169, 155, .6);
-  max-width: 100%;
-  margin-left: auto;
-  margin-right: auto;*/
-  width: 100%;
-  
-  background-image: url('../images/workspace.jpg');
-  opacity: .6;
+  width: 100%;  
+  background: linear-gradient(rgba(255,255,255,0.4), rgba(255,255,255,0.4)), url(../images/workspace.jpg);
+  /* Center and scale the image nicely */
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   overflow: hidden;

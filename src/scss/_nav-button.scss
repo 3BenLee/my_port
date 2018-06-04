@@ -21,7 +21,7 @@
 .lines {
   width: 25px;
   height: 3px;
-  background: #596778;
+  background: $cream;
   display: block;
   position: absolute;
   top: 50%;
@@ -147,7 +147,6 @@
 /*Style for round menu*/
 
 .menu-item {
-  background: #EEEEEE;
   border-radius: 100%;
   width: 80px;
   height: 80px;
@@ -178,11 +177,11 @@
   font-size: 26px;
 }
 
-.menu-item:hover {
+/*.menu-item:hover {
   background: #EEEEEE;
   color: #3290B1;
 }
-
+*/
 .menu-item:nth-child(3) {
   -webkit-transition-duration: 180ms;
   transition-duration: 180ms;
@@ -225,7 +224,8 @@
 }
 
 .item-1:hover {
-  color: #669AE1;
+  color: $brown;
+  background: $cream;
   text-shadow: none;
 }
 
@@ -236,18 +236,20 @@
 }
 
 .item-2:hover {
-  color: #70CC72;
+  color: $orange;
+  background: $cream;
   text-shadow: none;
 }
 
 .item-3 {
-  background-color: $green;
+  background-color: $navyblue;
   box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.14);
   text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.12);
 }
 
 .item-3:hover {
-  color: #FE4365;
+  color: $navyblue;
+  background: $cream;
   text-shadow: none;
 }
 
@@ -258,7 +260,8 @@
 }
 
 .item-4:hover {
-  color: #C49CDE;
+  color: $brown;
+  background: $cream;
   text-shadow: none;
 }
 
@@ -269,18 +272,20 @@
 }
 
 .item-5:hover {
-  color: #FC913A;
+  color: $orange;
+  background: $cream;
   text-shadow: none;
 }
 
 .item-6 {
-  background-color: $green;
+  background-color: $navyblue;
   box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.14);
   text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.12);
 }
 
 .item-6:hover {
-  color: #62C2E4;
+  color: $navyblue;
+  background: $cream;
   text-shadow: none;
 }
 
