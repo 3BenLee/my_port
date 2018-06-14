@@ -4,8 +4,9 @@
 }*/
 
 .portfolio {
-  width: 100%;  
-  background: linear-gradient(rgba(255,255,255,0.4), rgba(255,255,255,0.4)), url(../images/workspace.jpg);
+  width: 100%;
+  /*adds opacity to background*/  
+  background: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url(../images/brick-wall.jpg);
   /* Center and scale the image nicely */
   background-position: center;
   background-repeat: no-repeat;
@@ -35,9 +36,9 @@
     -webkit-flex: 1 1 auto;
     flex: 1 1 auto; 
     padding: 10px;
-    margin: 70px;
-    width: 30%;
-    background-color: rgba(57, 74, 81, .5);
+    margin: 40px;
+    width: 20%;
+    /*background-color: rgba(57, 74, 81, .5);*/ 
     border-radius: 8px;
     text-align: center;
 }
