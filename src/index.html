@@ -9,20 +9,19 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
   <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
   </head>
   <body>
     <nav class="navbar hiding">
       <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="portfolio.html">Portfolio</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="#bg-page-1">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#portfolio-header">Portfolio</a></li>
+        <li><a href="#header-social">Contact</a></li>
       </ul>   
     </nav>
-  	<div class="bg-page-1">
+  	<div class="bg-page-1" id="bg-page-1">
       <nav class="menu">
         <input type="checkbox" href="#" class="menu-open" name="menu-open" id="menu-open">
         <label class="menu-open-button" for="menu-open">
@@ -30,17 +29,17 @@
           <span class="lines line-2"></span>
           <span class="lines line-3"></span>
         </label>
-        <a href="#" class="menu-item item-1"><span class="fas fa-home"></span></a>
-        <a href="#" class="menu-item item-2"><span class="fas fa-toolbox"></span></a>
-        <a href="#" class="menu-item item-3"><span class="fas fa-user"></span></a>
-        <a href="#" class="menu-item item-4"><span class="far fa-images"></span></a>
-        <a href="#" class="menu-item item-5"><span class="far fa-envelope"></span></a>
-        <a href="#" class="menu-item item-6"><span class="fab fa-github"></span></a>
-      </nav>
+        <a href="#bg-page-1" class="menu-item item-1"><span class="fas fa-home"></span></a>
+        <a href="#my-design-style" class="menu-item item-2"><span class="fas fa-toolbox"></span></a>
+        <a href="#about" class="menu-item item-3"><span class="fas fa-user"></span></a>
+        <a href="#portfolio-header" class="menu-item item-4"><span class="far fa-images"></span></a>
+        <a href="#header-social" class="menu-item item-5"><span class="far fa-envelope" id="envelope"></span></a>
+        <a href="https://github.com/3BenLee" class="menu-item item-6"><span class="fab fa-github"></span></a>
+    </nav>
       <h1 id="name">Ben Lee Harned III</h1>
       <h2 id="subtitle">Front End Developer</h2>   
   	</div>
-    <div class="my-design-style">
+    <div class="my-design-style" id="my-design-style">
       <hr class="top">
       <h2>Hi, my name is Ben. I design and develop <strong>stylish</strong> and <strong>functional</strong> websites for small businesses. My tool box:</h2>
       <hr class="bottom">
@@ -74,14 +73,14 @@
         </div>
       </div>
     </div>
-    <div class="about">
+    <div class="about" id="about">
       <img class="about-photo" src="images/Tsukiji_bw.jpeg">
       <h1 class="about-header">About Me...</h1>
       <p>In 2015 I began to study graphic design and I learned the tools and fundamentals. Since then I have designed some logos for acqauintances and local companies in Japan and abroad. While studying and practicing graphic design I became interested in development. I started to dabble to in it in 2016. Just over a year ago I became fully invested in programming and development. Nowadays I spend time every day practicing and brushing up my skills. It's a new and exciting adventure for me. I attend programming meetups and gatherings during my spare time to gather and share knowledge with peers. I enjoy the challenges of learning new tools, languages, and tricks. Most of all I love the feeling of seeing my visions come to life on a page. While I enjoy creating new and quirky sites for small businesses, I am also capable of crafting more corporate friendly straight-forward sites.</p>
     </div>
-    <footer class="about-footer">
-      <h1>Portfolio</h1>
-    </footer>
+    <div class="portfolio-nav">
+      <h1 class="portfolio-header" id="portfolio-header">P<span id="orange-o">o</span>rtf<span id="orange-o">o</span>li<span id="orange-o">o</span></h1>
+    </div>
     <div class="portfolio">
       <div class="port-flex-row">
         <div class="hvr-bob port-items">
@@ -90,40 +89,58 @@
         </div>
         <div class="hvr-bob port-items">
           <a target="_blank" href="#">
-            <img src="images/blue-macbook.png" alt="budget-calculator"></a>
+            <img src="images/budget.png" alt="budget-calculator"></a>
         </div>
         <div class="hvr-bob port-items">
           <a target="_blank" href="#">
-            <img src="images/blue-macbook.png" alt="FTP-calculator"></a>
+            <img src="images/pig-game.png" alt="FTP-calculator"></a>
         </div>
         <div class="hvr-bob port-items">
          <a target="_blank" href="#">
-            <img src="images/blue-macbook.png" alt="pig-game-app"></a>
+            <img src="images/quote.png" alt="pig-game-app"></a>
         </div>
         <div class="hvr-bob port-items">
           <a target="_blank" href="#">
-            <img src="images/blue-macbook.png" alt="travel-site"></a>
+            <img src="images/photo-site.png" alt="travel-site"></a>
         </div>
         <div class="hvr-bob port-items">
           <a target="_blank" href="#">
-            <img src="images/blue-macbook.png" alt="quote-machine"></a>
+            <img src="images/travel-site.png" alt="quote-machine"></a>
         </div>
       </div>
     </div>
+    <!--Contact Page-->
     <div class="bg-page-4">
       <div class="contact-nav">
-        <h1 class="header-social">Let's get <strong>social</strong></h1>
+        <h1 class="header-social" id="header-social">Let's <span>g</span>et <strong>social</strong></h1>
       </div>
       <div class="contact-flex">
          <a href="#" class="hvr-bob social icon-1"><span class="fab fa-instagram"></span></a>
-         <a href="#" class="hvr-bob social icon-2"><span class="far fa-envelope"></span></a>
+         <a href="#" class="hvr-bob social icon-2" id="envelope"><span class="far fa-envelope"></span></a>
          <a href="#" class="hvr-bob social icon-3"><span class="fab fa-facebook"></span></a>
       </div>
     </div>
     <footer>
       <h3>Designed and Coded By Ben Lee Harned III 2018</h3>
     </footer>
+    <!--Contact Form-->
+    <div id="contactForm">
+      <h1>Keep in touch!</h1>
+      <small>I'll get back to you as quickly as possible</small>
+      
+      <form action="#">
+        <input placeholder="Name" type="text" required />
+        <input placeholder="Email" type="email" required />
+        <input placeholder="Subject" type="text" required />
+        <textarea placeholder="Comment"></textarea>
+        <input class="formBtn" type="submit" />
+        <input class="formBtn" type="reset" />
+      </form>
+    </div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.2/jquery.scrollTo.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-localScroll/2.0.0/jquery.localScroll.min.js"></script>
+  <script src="js/smooth-scrolling.js"></script>
   <script src="js/jquery.waypoints.min.js"></script>
   <script src="js/scroll-detector.min.js"></script>
   <script src="js/scripts.js"></script>

@@ -1,15 +1,5 @@
-/*// Fade in navbar background on scroll
-$(window).on('scroll', function() {
-	if($(window).scrollTop()) {
-		$('nav').addClass('scrolling');
-	} else {
-		$('nav').removeClass('scrolling');
-	}	
-});
-*/
 
 var $navbar = $('.navbar');
-//var $bgPageTwo = $('.bgPageTwo');
 
 //navbar on scroll up
 scrollDetector.on( 'scroll:up', function() {
@@ -31,19 +21,6 @@ scrollDetector.on( 'at:top', function() {
     $navbar.removeClass('showing');
     $navbar.addClass('hiding');
 } );
-
-// $bgPageTwo.waypoint(function(direction) {
-
-//   console.log(direction)
-
-//   if (direction == 'up') {
-
-//     $navbar.removeClass('showing');
-//     $navbar.addClass('hiding');
-//   }
-     
-// }, {offset: '10%'});
-
 
 // Fade "Front End Dev" out on scroll
 $(window).scroll(function() {
@@ -67,7 +44,19 @@ $row.waypoint(function(direction) {
     }   
 }, {offset: '60%'});
 
-// Waypoints to slide in Contact Header 
+
+// Waypoints to ease in Portfolio Header
+var $portHeader = $('.portfolio-header');
+
+$portHeader.waypoint(function(direction) {
+    if (direction == 'down') {
+        $portHeader.addClass('portfolio-header-animate');
+    } else {
+        $portHeader.removeClass('portfolio-header-animate');
+    }   
+}, {offset: '80%'});
+
+// Waypoints to ease in Contact Header 
 var $header = $('.header-social');
 
 $header.waypoint(function(direction) {
@@ -78,6 +67,25 @@ $header.waypoint(function(direction) {
     }   
 }, {offset: '80%'});
 
+// Contact Form JS
+
+$(function() {
+  
+  // contact form animations
+  $('#envelope').click(function() {
+    $('#contactForm').fadeToggle();
+  })
+  $(document).mouseup(function (e) {
+    var container = $("#contactForm");
+
+    if (!container.is(e.target) // if the target of the click isn't the container...
+        && container.has(e.target).length === 0) // ... nor a descendant of the container
+    {
+        container.fadeOut();
+    }
+  });
+  
+});
 
 
 
