@@ -1,92 +1,418 @@
-.contact-nav {
-  top: 0;
-  left: 0;
-  width:100%;
-  /*height: 180px;*/
-  height: 180px;
-  padding: 10px;
-  box-sizing: border-box;
-  background-color: $cream; 
+
+.bg-page-4 {
+  width: 100%;
+  background-image: url('../images/brick-wall.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  overflow: hidden;   
 }
 
-.header-social {
-	font-size: 6rem;
-	font-weight: 300;
-  letter-spacing: -4px;
-	color: $navyblue;
-	padding-top: 13px;
-  opacity: 0;
-  transition: all 800ms ease-in;
-  transform: scale(1.05);
+.contact-comment {
+  color: $darkgrey;
+  background-color: rgba($darkblue, .4);
+  overflow: hidden;
+}
 
-  span {
-    color: $orange;
+.contact-comment h2 {
+  font-weight: 300;
+  font-size: 2.5rem;
+  margin-left: 40px;
+  margin-bottom: 0;
+  color: $green;
+}
+
+#comment {
+  display: inline-block;
+  width: 50%;
+  border-right: 6px solid $green;
+  list-style: none;
+}
+
+#comment img {
+  width: 50px;
+  height: 50px;
+  background-color: rgba($green, .6);
+  border-radius: 6px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-bottom: 10px;
+}
+
+#comment i {
+  width: 50px;
+  height: 50px;
+  font-size: 2.8rem;
+  text-align: center;
+  padding-top: 2px;
+  color: rgba(0, 0, 0, 0.7);
+  background-color: rgba($green, .6);
+  border-radius: 6px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-bottom: 10px;
+}
+
+
+#comment li p {
+  display: inline-block;
+  padding-left: 30px;
+  padding-bottom: 10px;
+  font-size: 1.6rem;
+  margin: 0;
+}
+
+#closing {
+  font-weight: 200;
+  font-size: 2.5rem; 
+  color: $darkgrey;
+  float: right;
+  margin-right: 140px;
+  margin-top: 70px;
+
+  @media(max-width: 1200px) {
+    font-weight: 200;
+    font-size: 2rem; 
+    color: $darkgrey;
+    float: right;
+    margin-right: 140px;
+    margin-top: 70px;
   }
-
-	strong {
-		color: $orange;
-	}
 }
-
-.header-social-animate {
-  opacity: 1;
-  transform: scale(1);
-}
-
 /* fadeIn keyframes for Contacts header */
 
 @keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
 
-.bg-page-4 {
-	width: 100%;
-	height: 100vh;  
-  background: -webkit-linear-gradient(rgba(255,255,255,0.2), rgba(255,255,255,0.2)), url(../images/level-up.jpeg);
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  overflow: hidden;  
-}
-
 .contact-flex {
-	display: flex;
-  	justify-content: space-between;
-  	flex-wrap: nowrap;
-  	margin-top: 170px;
-  	width: 80%;
-  	margin-left: auto;
-  	margin-right: auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
 
- 	.social {
- 		background: $orange;
- 		width: 80px;
- 		height: 80px;
- 		border-radius: 50%;
- 		text-align: center;
- 		vertical-align: middle;
- 		padding: 30px;
- 		color: $cream;
- 		font-size: 4.3em;
- 		margin-right: 100px;
- 		margin-left: 100px; 
- 	}
+  .outer-border {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    border: 2px solid $white;
+    border-radius: 50%;
+  }
+
+  .outer-border:hover {
+    border: 2px solid $orange;
+    transition: all .5s ease-in-out;
+  }
+
+  .social {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    background: $darkgrey;
+    width: 90%;
+    height: 90%;
+    border-radius: 50%;
+    text-align: center;
+    padding: 27px;
+    color: $white;
+    font-size: 3em;
+    text-shadow: 2px 2px $darkblue;
+
+    &:hover {
+      text-shadow: 2px 2px $green;
+    } 
+  }
 }
 
 footer {
-	text-align: right;
-	background-color: $cream;
-	/*height: 100px;*/
-  height: 100px;
-	
+	text-align: center;
+	background-color: $darkgrey;
+  height: 80px;	
 }
+
+footer h1 {
+  color: $green;
+  font-family: 'Lobster', cursive;
+  font-size: 2.5rem;
+  margin: 0;
+  padding-top: 0px; 
+}
+
 
 footer h3 {
 	color: $navyblue;
 	font-weight: 300;
-	font-size: 1.2rem;
-	padding-top: 75px;
+	font-size: 1rem;
+  padding-right: 5px;
 	overflow: hidden;
-	margin: 0; 
+	margin-left: auto;
+  margin-right: auto;
+  display: inline-block;
+  margin: 0;
+  padding-top: 10px; 
+}
+
+@media(max-width: 1050px) {
+
+  #comment li p {
+    display: inline-block;
+    padding-left: 30px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    font-size: 1.3rem;
+    margin: 0;
+  }
+
+  #closing {
+    font-weight: 200;
+    font-size: 1.6rem; 
+    color: $darkgrey;
+    float: right;
+    margin-right: 100px;
+    margin-top: 90px;
+  }
+}
+
+@media(max-width: 900px) {
+
+  #comment li p {
+    display: inline-block;
+    padding-left: 30px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    font-size: 1.1rem;
+    margin: 0;
+  }
+
+  #closing {
+    font-weight: 200;
+    font-size: 1.6rem; 
+    color: $darkgrey;
+    float: right;
+    margin-right: 90px;
+    margin-top: 90px;
+  }
+}
+
+@media(max-width: 780px) {
+  
+    .contact-comment h2 {
+    font-weight: 300;
+    font-size: 2.2rem;
+    margin-left: 40px;
+    margin-bottom: 0;
+    color: $green;
+  }
+
+  #comment {
+    display: inline-block;
+    width: 100%;
+    border-right: none;
+    list-style: none;
+  }
+
+  #comment li p {
+    display: inline-block;
+    padding-left: 30px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    font-size: 1.1rem;
+    margin: 0;
+  }
+
+  #closing {
+    font-weight: 300;
+    width: 90%;
+    font-size: 1.6rem; 
+    color: $green;
+    margin: 0;
+  }
+
+  .contact-flex {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-top: 90px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+
+  .outer-border {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    border: 2px solid $white;
+    border-radius: 50%;
+  }
+
+  .outer-border:hover {
+    border: 2px solid $orange;
+    transition: all .5s ease-in-out;
+  }
+
+  .social {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    background: $darkgrey;
+    width: 90%;
+    height: 90%;
+    border-radius: 50%;
+    text-align: center;
+    padding: 26px;
+    color: $white;
+    font-size: 1.9em;
+    text-shadow: 2px 2px $darkblue;
+
+    &:hover {
+      text-shadow: 2px 2px $green;
+    } 
+  }
+  }
+}
+
+@media(max-width: 580px) {
+
+    #comment img {
+      width: 35px;
+      height: 35px;
+    }
+
+    #comment i {
+      width: 35px;
+      height: 37px;
+      font-size: 2.1rem;
+      text-align: center;
+      padding-top: 4px;
+      color: rgba(0, 0, 0, 0.7);
+      background-color: rgba($green, .6);
+      border-radius: 6px;
+      display: inline-block;
+      vertical-align: middle;
+      margin-bottom: 10px;
+    }
+
+    .contact-flex {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      padding-top: 80px;
+      width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+
+      .outer-border {
+        position: relative;
+        width: 80px;
+        height: 80px;
+        border: 2px solid $white;
+        border-radius: 50%;
+      }
+
+    .outer-border:hover {
+      border: 2px solid $orange;
+      transition: all .5s ease-in-out;
+    }
+
+    .social {
+      position: absolute;
+      transform: translate(-50%, -50%);
+      top: 50%;
+      left: 50%;
+      background: $darkgrey;
+      width: 90%;
+      height: 90%;
+      border-radius: 50%;
+      text-align: center;
+      padding: 20px;
+      color: $white;
+      font-size: 1.7em;
+      text-shadow: 2px 2px $darkblue;
+
+      &:hover {
+        text-shadow: 2px 2px $green;
+      } 
+    }
+  }
+}
+
+@media(max-width: 350px) {
+
+    #comment img {
+      width: 35px;
+      height: 35px;
+    }
+
+    #comment i {
+      width: 35px;
+      height: 37px;
+      font-size: 2.1rem;
+      text-align: center;
+      padding-top: 4px;
+      color: rgba(0, 0, 0, 0.7);
+      background-color: rgba($green, .6);
+      border-radius: 6px;
+      display: inline-block;
+      vertical-align: middle;
+      margin-bottom: 10px;
+    }
+
+      #comment li p {
+        display: inline-block;
+        padding-left: 15px;
+        padding-right: 10px;
+        padding-bottom: 10px;
+        font-size: .9rem;
+        margin: 0;
+      }
+
+    .contact-flex {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      padding-top: 80px;
+      width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+
+      .outer-border {
+        position: relative;
+        width: 65px;
+        height: 65px;
+        border: 2px solid $white;
+        border-radius: 50%;
+      }
+
+    .outer-border:hover {
+      border: 2px solid $orange;
+      transition: all .5s ease-in-out;
+    }
+
+    .social {
+      position: absolute;
+      transform: translate(-50%, -50%);
+      top: 50%;
+      left: 50%;
+      background: $darkgrey;
+      width: 90%;
+      height: 90%;
+      border-radius: 50%;
+      text-align: center;
+      padding: 11px;
+      color: $white;
+      font-size: 1.7em;
+      text-shadow: 2px 2px $darkblue;
+
+      &:hover {
+        text-shadow: 2px 2px $green;
+      } 
+    }
+  }
 }
 
 /* Hover Float Keyframes for icons */
@@ -148,6 +474,7 @@ footer h3 {
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale;
+  cursor: pointer;
 }
 .hvr-bob:hover, .hvr-bob:focus, .hvr-bob:active {
   -webkit-animation-name: hvr-bob-float, hvr-bob;

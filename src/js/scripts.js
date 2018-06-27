@@ -1,35 +1,42 @@
 
 var $navbar = $('.navbar');
 
+$(document).ready(function(){
+  $navbar.addClass('top');
+});
+
+
+
 //navbar on scroll up
 scrollDetector.on( 'scroll:up', function() {
 
   $navbar.removeClass('hiding');
   $navbar.addClass('showing');
 
-} );
+});
 
-scrollDetector.on( 'scroll:down', function() {
+scrollDetector.on('scroll:down', function() {
 
   $navbar.removeClass('showing');
   $navbar.addClass('hiding');
 
-} );
+});
 
-scrollDetector.on( 'at:top', function() {
+scrollDetector.on('at:top', function() {
     
     $navbar.removeClass('showing');
     $navbar.addClass('hiding');
-} );
+});
+
 
 // Fade "Front End Dev" out on scroll
 $(window).scroll(function() {
 
     if ($(window).scrollTop()>0)
      {
-        $('.nav-2').fadeOut();
+        $('#name, #subtitle').fadeOut();
      } else {
-      $('.nav-2').fadeIn();
+      $('#name, #subtitle').fadeIn();
      }
  });
 
@@ -71,8 +78,8 @@ $header.waypoint(function(direction) {
 
 $(function() {
   
-  // contact form animations
-  $('#envelope').click(function() {
+  // contact form animations (home page link)
+  $('#envelope, #envelope2').click(function() {
     $('#contactForm').fadeToggle();
   })
   $(document).mouseup(function (e) {
@@ -84,8 +91,18 @@ $(function() {
         container.fadeOut();
     }
   });
+
+  $('.contact-form-close').click(function() {
+    $('#contactForm').fadeOut();
+  });
   
 });
+
+
+
+
+
+
 
 
 

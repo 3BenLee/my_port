@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+
 @import 'variables';
 @import 'navbar';
 @import 'nav-button';
@@ -8,13 +10,17 @@
 @import 'portfolio';
 @import 'contact-form';
 
+* {
+  box-sizing: border-box;
+}
 
-body, html {
+/*body, html {
     height: 100%;
     margin: 0px;
     font-family: $main-font;
     color: $cream;
-}
+}*/
+
 
 
 
