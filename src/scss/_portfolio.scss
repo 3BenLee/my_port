@@ -24,8 +24,8 @@ body {
 }
 
 .my-work {
-  width: 25%;
-  padding: 15px;
+  width: 20%;
+  margin: 10px;
 
   @media(max-width: 768px) {
     order: -1;
@@ -40,7 +40,7 @@ body {
   color: $white;
   margin: 0;
 
-  @media (max-width: 1290px) {
+  @media (max-width: 1400px) {
      font-size: 3.5rem;
   }
 
@@ -63,8 +63,8 @@ body {
 }
 
 .last-item {
-  width: 25%;
-  padding: 15px;
+  width: 20%;
+  margin: 10px;
 
   @media (max-width: 1290px) {
      font-size: 3.5rem;
@@ -85,9 +85,9 @@ body {
 
 .project {
   margin: 0;
-  padding: 15px;
+  margin: 10px;
   position: relative;
-  width: 25%;
+  width: 20%;
   @media (max-width: 768px) {
    padding: 10px;
    width: 50%; 
@@ -106,11 +106,17 @@ body {
     right: 1.5em;
     background: rgba($green, .8);
     color: $darkblue;
+    font-size: .6rem;
+    font-weight: 300;
     display: flex;
     align-items: center;
     justify-content: center;
     opacity: 0;
     transition: opacity ease-in-out 300ms;
+
+      @media (max-width: 960px) {
+        font-size: .5rem; 
+      }
   }
   
   &:hover figcaption { 
