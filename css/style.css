@@ -579,18 +579,17 @@ hr.bottom {
 
 footer {
   text-align: center;
-  background-color: #d3d3d3;
-  height: 80px; }
+  background-color: #0b2027; }
 
 footer h1 {
   color: #70a9a1;
   font-family: 'Lobster', cursive;
-  font-size: 2.5rem;
+  font-size: 1.7rem;
   margin: 0;
   padding-top: 0px; }
 
 footer h3 {
-  color: #404b69;
+  color: #d3d3d3;
   font-weight: 300;
   font-size: 1rem;
   padding-right: 5px;
@@ -885,7 +884,8 @@ body {
   @media (max-width: 768px) {
     .my-work {
       order: -1;
-      width: 100%; } }
+      width: 100%;
+      padding: 10px; } }
 
 .port-title {
   text-transform: uppercase;
@@ -923,7 +923,8 @@ body {
       font-size: 2.2rem; } }
   @media (max-width: 767px) {
     .last-item {
-      font-size: 3rem; } }
+      font-size: 3rem;
+      padding: 10px; } }
 
 .project {
   margin: 0;
@@ -933,7 +934,10 @@ body {
   @media (max-width: 768px) {
     .project {
       padding: 10px;
-      width: 50%; } }
+      width: 45%; } }
+  @media (max-width: 450px) {
+    .project {
+      width: 100%; } }
   .project img {
     width: 100%;
     display: block; }
