@@ -179,7 +179,6 @@ nav ul li a:hover {
 */
 .bg-page-1 {
   width: 100%;
-  /* Set a specific height */
   height: 100vh;
   background-image: url("../images/hello-bg.jpeg");
   background-repeat: no-repeat;
@@ -306,6 +305,8 @@ nav ul li a:hover {
     animation: 4s fadeIn; } }
 
 @media (max-width: 550px) {
+  .bg-page-one {
+    background-attachment: scroll; }
   #name {
     font-size: 2.4rem;
     width: 100%;
