@@ -962,9 +962,9 @@ body {
   border: 2px solid #0b2027;
   font-weight: 300;
   padding: 5em;
-  width: 70%;
+  width: 50%;
   text-align: center;
-  background: rgba(57, 74, 81, 0.7);
+  background: rgba(57, 74, 81, 0.8);
   position: fixed;
   top: 50%;
   left: 50%;
@@ -980,12 +980,9 @@ body {
   position: absolute;
   top: 20px;
   right: 20px;
-  height: 30px;
-  width: 30px;
   background-color: #0b2027;
   color: #70a9a1;
-  border: 2px solid #70a9a1;
-  border-radius: 50%; }
+  border: 2px solid #70a9a1; }
   .contact-form-close:hover {
     cursor: pointer;
     background-color: #70a9a1;

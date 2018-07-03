@@ -4,9 +4,9 @@
   border: 2px solid $darkblue;
   font-weight: 300; 
   padding: 5em;
-  width: 70%;
+  width: 50%;
   text-align: center;
-  background: rgba(57, 74, 81, 0.7);
+  background: rgba(57, 74, 81, 0.8);
   position: fixed;
   top:50%;
   left:50%;
@@ -24,12 +24,9 @@
   position: absolute;
   top: 20px;
   right: 20px;
-  height: 30px;
-  width: 30px;
   background-color: $darkblue;
   color: $green;
   border: 2px solid $green;
-  border-radius: 50%;
 
   &:hover {
     cursor: pointer;
