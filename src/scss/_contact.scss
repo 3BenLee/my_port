@@ -6,13 +6,8 @@
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
-  overflow: hidden;
-
-  @media (max-width: 550px) {
-       background-attachment: scroll;
-     }   
+  overflow: hidden;   
 }
-
 
 .contact-comment {
   color: $darkgrey;
@@ -66,6 +61,7 @@
   padding-bottom: 10px;
   font-size: 1.6rem;
   margin: 0;
+  font-weight: 200;
 }
 
 #closing {
@@ -85,9 +81,6 @@
     margin-top: 70px;
   }
 }
-/* fadeIn keyframes for Contacts header */
-
-@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
 
 .contact-flex {
   display: flex;
@@ -143,9 +136,8 @@ footer h1 {
   font-family: 'Lobster', cursive;
   font-size: 1.7rem;
   margin: 0;
-  padding-top: 0px; 
+  padding-top: 0px;
 }
-
 
 footer h3 {
 	color: $darkgrey;
@@ -159,6 +151,11 @@ footer h3 {
   margin: 0;
   padding-top: 10px; 
 }
+
+/*MEDIA QUERIES
+
+Decided to group media queries at the bottom on this section 
+for readability*/
 
 @media(max-width: 1050px) {
 
@@ -204,7 +201,7 @@ footer h3 {
 
 @media(max-width: 780px) {
   
-    .contact-comment h2 {
+  .contact-comment h2 {
     font-weight: 300;
     font-size: 2.2rem;
     margin-left: 40px;
@@ -237,86 +234,86 @@ footer h3 {
   }
 
   .contact-flex {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  padding-top: 90px;
-  width: 80%;
-  margin-left: auto;
-  margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 90px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
 
-  .outer-border {
-    position: relative;
-    width: 100px;
-    height: 100px;
-    border: 2px solid $white;
-    border-radius: 50%;
-  }
+    .outer-border {
+      position: relative;
+      width: 100px;
+      height: 100px;
+      border: 2px solid $white;
+      border-radius: 50%;
+    }
 
-  .outer-border:hover {
-    border: 2px solid $orange;
-    transition: all .5s ease-in-out;
-  }
+    .outer-border:hover {
+      border: 2px solid $orange;
+      transition: all .5s ease-in-out;
+    }
 
-  .social {
-    position: absolute;
-    transform: translate(-50%, -50%);
-    top: 50%;
-    left: 50%;
-    background: $darkgrey;
-    width: 90%;
-    height: 90%;
-    border-radius: 50%;
-    text-align: center;
-    padding: 26px;
-    color: $white;
-    font-size: 1.9em;
-    text-shadow: 2px 2px $darkblue;
+    .social {
+      position: absolute;
+      transform: translate(-50%, -50%);
+      top: 50%;
+      left: 50%;
+      background: $darkgrey;
+      width: 90%;
+      height: 90%;
+      border-radius: 50%;
+      text-align: center;
+      padding: 26px;
+      color: $white;
+      font-size: 1.9em;
+      text-shadow: 2px 2px $darkblue;
 
-    &:hover {
-      text-shadow: 2px 2px $green;
-    } 
-  }
+      &:hover {
+        text-shadow: 2px 2px $green;
+      } 
+    }
   }
 }
 
 @media(max-width: 580px) {
 
-    #comment img {
-      width: 35px;
-      height: 35px;
+  #comment img {
+    width: 35px;
+    height: 35px;
+  }
+
+  #comment i {
+    width: 35px;
+    height: 37px;
+    font-size: 2.1rem;
+    text-align: center;
+    padding-top: 4px;
+    color: rgba(0, 0, 0, 0.7);
+    background-color: rgba($green, .6);
+    border-radius: 6px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-bottom: 10px;
+  }
+
+  .contact-flex {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 80px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+
+    .outer-border {
+      position: relative;
+      width: 80px;
+      height: 80px;
+      border: 2px solid $white;
+      border-radius: 50%;
     }
-
-    #comment i {
-      width: 35px;
-      height: 37px;
-      font-size: 2.1rem;
-      text-align: center;
-      padding-top: 4px;
-      color: rgba(0, 0, 0, 0.7);
-      background-color: rgba($green, .6);
-      border-radius: 6px;
-      display: inline-block;
-      vertical-align: middle;
-      margin-bottom: 10px;
-    }
-
-    .contact-flex {
-      display: flex;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      padding-top: 80px;
-      width: 80%;
-      margin-left: auto;
-      margin-right: auto;
-
-      .outer-border {
-        position: relative;
-        width: 80px;
-        height: 80px;
-        border: 2px solid $white;
-        border-radius: 50%;
-      }
 
     .outer-border:hover {
       border: 2px solid $orange;
@@ -340,9 +337,24 @@ footer h3 {
 
       &:hover {
         text-shadow: 2px 2px $green;
-      } 
-    }
+      }
+    } 
   }
+
+  footer h1 {
+    font-size: 1.2rem;
+  }
+  
+
+  footer h3 {
+    font-size: .8rem;
+  }
+}
+
+@media (max-width: 550px) {
+  .bg-page-4 {
+     background-attachment: scroll;
+  }           
 }
 
 @media(max-width: 350px) {
@@ -418,6 +430,7 @@ footer h3 {
     }
   }
 }
+
 
 /* Hover Float Keyframes for icons */
 

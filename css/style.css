@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Lobster");
-@import url("https://fonts.googleapis.com/css?family=Raleway:300,400i,900");
+@import url("https://fonts.googleapis.com/css?family=Raleway:200,300,400i,900");
 nav {
   position: fixed;
   z-index: 3;
@@ -200,9 +200,9 @@ nav ul li a:hover {
   text-align: left;
   margin-top: 10%;
   margin-left: 10%;
-  color: #d3d3d3;
-  font-size: 4rem;
-  font-weight: 900;
+  color: #f8f8f8;
+  font-size: 4.5rem;
+  font-weight: 200;
   letter-spacing: 0px;
   animation: 3s fadeIn fadeOut; }
   @media (max-width: 1240px) {
@@ -458,9 +458,6 @@ hr.bottom {
   background-attachment: fixed;
   background-position: center;
   overflow: hidden; }
-  @media (max-width: 550px) {
-    .bg-page-4 {
-      background-attachment: scroll; } }
 
 .contact-comment {
   color: #d3d3d3;
@@ -507,7 +504,8 @@ hr.bottom {
   padding-left: 30px;
   padding-bottom: 10px;
   font-size: 1.6rem;
-  margin: 0; }
+  margin: 0;
+  font-weight: 200; }
 
 #closing {
   font-weight: 200;
@@ -524,13 +522,6 @@ hr.bottom {
       float: right;
       margin-right: 140px;
       margin-top: 70px; } }
-
-/* fadeIn keyframes for Contacts header */
-@keyframes fadeIn {
-  from {
-    opacity: 0; }
-  to {
-    opacity: 1; } }
 
 .contact-flex {
   display: flex;
@@ -590,6 +581,10 @@ footer h3 {
   margin: 0;
   padding-top: 10px; }
 
+/*MEDIA QUERIES
+
+Decided to group media queries at the bottom on this section 
+for readability*/
 @media (max-width: 1050px) {
   #comment li p {
     display: inline-block;
@@ -729,7 +724,15 @@ footer h3 {
       font-size: 1.7em;
       text-shadow: 2px 2px #0b2027; }
       .contact-flex .social:hover {
-        text-shadow: 2px 2px #70a9a1; } }
+        text-shadow: 2px 2px #70a9a1; }
+  footer h1 {
+    font-size: 1.2rem; }
+  footer h3 {
+    font-size: .8rem; } }
+
+@media (max-width: 550px) {
+  .bg-page-4 {
+    background-attachment: scroll; } }
 
 @media (max-width: 350px) {
   #comment img {
